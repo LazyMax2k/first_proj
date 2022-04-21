@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Effra, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:#fff;
+    background-image: url(../img/background.jpg);
+}
+
+.header_container {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo_intro{
+    width: 40px;
+    height: 40px;
+    margin-left: 80.68px;
+    margin-top: 29px;
+}
+
+.logo {
+    display: flex;
+}
+
+.name_company {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 37px;
+    margin-left: 10.32px;
+}
+
+.nav {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.nav_link {
+    margin:0 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.registration {
+    margin: 40px 80px 0px 0px;
+}
+
+.registration_button {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10.5px 30px;
+    cursor: pointer;
+    text-decoration: none; /* Прибирає лінію */ 
+}
+
+.main_content {
+    font-size: 72px;
+    padding-top: 140px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main_content_align {
+    font-size: 72px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.intro_content_description {
+    font-weight: 400;
+    color: #8B8B8B;
+    text-align: center;
+    padding-top: 24px;
+    line-height: 1.65em; 
+    padding-bottom: 28px;
+}
+
+.button {
+    border-radius: 40px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.intro_content_button{
+    font-weight: 700;
+    color: #000;
+    background: #A8FF35;
+}
+
+.intro_content_wrapper {
+    padding-top: 30px
+}
+
+.arrow_setting {
+    width: 29px;
+    height: 35px;
+}
+
+.button_additions_text{
+    font-family: 'Ink Free', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 100px;
+    text-align: center;
+    transform: rotate(6deg);
+}
+
+.button_additions {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
