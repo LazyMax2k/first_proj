@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: Effra, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -17,40 +17,42 @@ body{
     color: #fff;
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 25px 15px;
 }
-.logo_intro{
+
+.logo_intro {
     width: 40px;
     height: 40px;
-    margin-left: 80.68px;
-    margin-top: 29px;
 }
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .name_company {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    margin-top: 37px;
-    margin-left: 10.32px;
 }
 
 .nav {
     font-size: 18px;
-    margin-top: 40px;
 }
 
 .nav_link {
-    margin:0 20px;
+    margin: 0 20px;
     color: #fff;
     text-decoration: none;
 }
 
 .registration {
-    margin: 40px 80px 0px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .registration_button {
@@ -124,4 +126,113 @@ body{
 .wrapper {
     display: flex;
     justify-content: center;
+}
+
+.header_btn {
+    display: none;
+}
+
+.header_btn span {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(0) translateX(-50%);
+    transition: all 300ms linear;
+    transform-origin: left center;
+}
+
+.header_btn span:first-child {
+    top: 7px;
+}
+
+.header_btn span:last-child {
+    bottom: 7px;
+}
+
+.header_container_collapsed .header_btn span:first-child {
+    top: 11px;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.header_container_collapsed .header_btn span:last-child {
+    bottom: 11px;
+    transform: rotate(-45deg) translateX(-50%);
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        position: relative;
+        padding-top: 94px;
+        width: 100%;
+    }
+
+    .header_container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: transparent;
+        transition: all 300ms linear;
+        overflow: hidden;
+        max-height: 94px;
+    }
+
+    .name_company {
+        display: none;
+    }
+
+    .registration {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 300ms linear;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 300ms linear;
+    }
+
+    .header_btn {
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .header_container_collapsed {
+        background-color: #000;
+        max-height: initial;
+    }
+
+    .header_container_collapsed .registration {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header_container_collapsed .nav {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .nav_link {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .registration_button {
+        margin: 20px 0;
+    }
 }
